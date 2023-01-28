@@ -37,16 +37,18 @@ void PrintArray(int[,] arr)
 
 void MiddleAriphmeticOfColumn(int[,] array)
 {
-    int middleAriphmetic = 0;
+    double middleAriphmetic = 0;
     for (int j = 0; j < array.GetLength(1); j++)
     {
         for (int i = 0; i < array.GetLength(0); i++)
         {
             {
                 middleAriphmetic = middleAriphmetic + array[i, j];
+                
 
             }
         }
+        middleAriphmetic = middleAriphmetic/array.GetLength(0);
         Console.WriteLine(middleAriphmetic);
         middleAriphmetic = 0;
     }
